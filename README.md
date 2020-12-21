@@ -6,7 +6,7 @@
 ![Twitter Follow](https://img.shields.io/twitter/follow/howtocodewell)
 
 This component displays tabs.
-It is used as part of [https://howtocodewell](https://howtocodewell])
+It is used as part of [https://howtocodewell.net](https://howtocodewell.net])
 
 ## Install
 ```bash
@@ -25,8 +25,11 @@ $ npm  test
 
 ## Usage
 ```javascript
-import { Tab } from '@howtocodewell/tabs'
+import { TabList, Tab } from '@howtocodewell/tabs'
 
-<Tab/>
+<TabList containerClassName={`tab-container`} listClassName={`list-reset flex border-b`}>
+  <Tab label={`First Tab`} className={`bg-gray-500 border-r-2 border-gray-100 inline-block py-2 px-4 text-pink-300 font-semibold hover:text-black hover:bg-pink-300`} onClick={ () => alert('Hello Coders')  } />
+  <Tab label={`Second Tab`} className={`bg-gray-500 inline-block py-2 px-4 text-pink-300 font-semibold hover:text-black hover:bg-pink-300`} onClick={ () => alert('Happy Coding')  } />
+</TabList>
 
 ```
