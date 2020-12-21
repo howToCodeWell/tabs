@@ -1,0 +1,8 @@
+dist: xenial
+os: linux
+language: node_js
+node_js:
+  - "stable"
+script:
+  - npm build
+  - npm test
